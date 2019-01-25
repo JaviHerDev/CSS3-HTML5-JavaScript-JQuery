@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--Tooltips, ejemplo 3-->
+	<style type="text/css">
+
+body{
+	text-align: center;
+}
+
+	.tooltip {
+	    position: relative;
+	    display: inline-block;
+	    border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	    visibility: hidden;
+	    width: 120px;
+	    background-color: black;
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px 0;
+	    position: absolute;
+	    z-index: 1;
+	    bottom: 100%;
+	    left: 50%;
+	    margin-left: -60px;
+    
+    /* Fade en tooltip - tarda 1 segundo para ir de 0% a 100% de opacidad: */
+	    opacity: 0;
+	    transition: opacity 3s;
+	}
+
+	.tooltip:hover .tooltiptext {
+    	visibility: visible;
+    	opacity: 1;
+	}
+
+	</style>
+</head>
+<body>
+	<h2>Tooltip con efecto Fade</h2>
+	<p>Cuando muevas el ratón encima del texto, aparecerá un tooltips con efecto fade, tarda 3 segundos para llegar al 100% de opacidad.</p>
+
+	<div class="tooltip">Pasa el ratón sobre mi
+  		<span class="tooltiptext">Tardo 3 segundos en aparecer!</span>
+	</div>
+
+</body>
+</html>
