@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <title>Ejercicio Jquery</title>
+</head>
+<body>
+ 
+  <script type="text/javascript" >
+      
+    $(document).ready(inicial);
+      
+      function inicial(){
+          $("#fila1").click(color1);
+          $("#fila2").click(color2);
+      }
+      
+      function color1(){
+          var x=$(".tabla");
+          x.css("background-color","orange");
+      }
+      
+      function color2(){
+          var x=$(".tabla");
+          x.css("background-color","blue");
+      }
+    
+    </script>
+    
+    <h1 style="text-align: center"> Presiona una fila para cambiar el color de fondo de la tabla</h1>
+   
+   <table class="tabla" style="border: 1px solid black; margin-left: 50%; background-color: green;">
+    <tr>
+        <th style="border: 1px solid black;">TABLA</th>
+    </tr>
+    <tr>
+        <td id="fila1" style="border: 1px solid black;">primera fila</td>
+    </tr>
+    <tr>
+        <td id="fila2" style="border: 1px solid black;">segunda fila</td>
+    </tr>
+   </table>
+   
+</body>
+</html>

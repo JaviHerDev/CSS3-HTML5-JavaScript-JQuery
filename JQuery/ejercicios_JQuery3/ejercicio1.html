@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Presiona una de las siguientes palabras para ocultarlas.</h1>
+   
+   <div style="text-align: center;">
+       <strong id="s1"> Hola, </strong>
+       <strong id="s2"> Soy </strong>
+       <strong id="s3"> Strong </strong>
+   </div>
+   
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("#s1").click(function(){
+                $(this).hide();
+            });
+            $("#s2").click(function(){
+                $(this).hide();
+            });
+            $("#s3").click(function(){
+                $(this).hide();
+            });
+        });
+    
+    </script>
+
+    
+</body>
+</html>

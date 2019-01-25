@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+  
+  <h1 style="text-align: center">El hipervínculo está vacío, presiona los botones para activarlo y obtener la direccón URL.</h1>
+  
+  <a href="" style="margin-left: 45%"> Vínculo vacio</a>
+  
+  <br><br>
+ 
+  
+  <input type="button" value="Activar vínculo Google" style="margin-left: 35%">
+  <input type="button" value="Activar vínculo Xakata">
+  <input type="button" value="Activar vínculo W3School">
+  
+   
+   
+    
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("input[type=button]:nth-of-type(1)").click(function(){
+						$("a").attr("href","https://www.google.com").text("Google");
+					});
+            
+            $("input[type=button]:nth-of-type(2)").click(function(){
+						$("a").attr("href","https://www.xataka.com").text("Xakata");
+					});
+            
+            $("input[type=button]:nth-of-type(3)").click(function(){
+						$("a").attr("href","https://www.w3schools.com").text("W3School");
+					});
+
+            
+        });
+    
+    </script>
+
+    
+</body>
+</html>

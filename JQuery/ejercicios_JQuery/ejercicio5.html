@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <title>Ejercicio Jquery</title>
+</head>
+<body>
+ 
+  <script type="text/javascript" >
+      
+    $(document).ready(inicial);
+
+      function inicial(){
+            $("#boton1").click(clase1);
+            $("#boton2").click(clase2);
+            $("#boton3").click(clase3);
+          
+      }
+
+      function clase1(){
+            var x=$("#parrafo1");
+            x.css("font-family","Verdana");
+            x.css("font-size","1.5em");
+          alert("Clase de la noticia: " + $("#div1").attr("class"));
+      }
+      
+      function clase2(){
+          var x=$("#parrafo2");
+            x.css("font-family","Verdana");
+            x.css("font-size","1.5em");
+          alert("Clase de la noticia: " + $("#div2").attr("class"));
+            
+      }
+      
+      function clase3(){
+          var x=$("#parrafo3");
+            x.css("font-family","Verdana");
+            x.css("font-size","1.5em");
+          alert("Clase de la noticia: " + $("#div3").attr("class"));
+            
+      }
+    
+    </script>
+   
+   <div class="noticia1" id="div1" style="text-align: center;">
+       <h1 id="titulo1">Esto es la noticia 1</h1>
+       <p id="parrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sint ea totam quia nihil aspernatur aut deleniti, pariatur est voluptatum quasi architecto laboriosam voluptatibus aliquam vitae mollitia, minima quisquam quaerat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sint ea totam quia nihil aspernatur aut deleniti, pariatur est voluptatum quasi architecto laboriosam voluptatibus aliquam vitae mollitia, minima quisquam quaerat!</p>
+   </div>
+    <input type="button" id="boton1" value="Obtener Clase y cambiar tamaño" style="margin-left: 45%;">
+
+   
+   <div class="noticia2" id="div2" style="text-align: center;">
+       <h1 id="titulo2">Esto es la noticia 2</h1>
+       <p id="parrafo2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sint ea totam quia nihil aspernatur aut deleniti, pariatur est voluptatum quasi architecto laboriosam voluptatibus aliquam vitae mollitia, minima quisquam quaerat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sint ea totam quia nihil aspernatur aut deleniti, pariatur est voluptatum quasi architecto laboriosam voluptatibus aliquam vitae mollitia, minima quisquam quaerat!</p>
+   </div>
+   <input type="button" id="boton2" value="Obtener Clase y cambiar tamaño" style="margin-left: 45%;" >
+   
+   <div class="noticia3" id="div3" style="text-align: center;">
+       <h1 id="titulo3">Esto es la noticia 3</h1>
+       <p id="parrafo3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sint ea totam quia nihil aspernatur aut deleniti, pariatur est voluptatum quasi architecto laboriosam voluptatibus aliquam vitae mollitia, minima quisquam quaerat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sint ea totam quia nihil aspernatur aut deleniti, pariatur est voluptatum quasi architecto laboriosam voluptatibus aliquam vitae mollitia, minima quisquam quaerat!</p>
+   </div>
+   <input type="button" id="boton3" value="Obtener Clase y cambiar tamaño" style="margin-left: 45%;" >
+    
+</body>
+</html>

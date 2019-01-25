@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+ 
+ <style>
+    
+        .cabeza{
+            background-color: red;
+        }
+        
+        .cuerpo{
+            background-color: yellow;
+        }
+    
+    </style>
+  
+  <h1 style="text-align: center">Presiona los botones para Asociar o Desasociar las clases de la tabla (th y tbody).</h1>
+  
+  <table border="1" style="margin-left: 40%">
+		<caption>
+		TABLA 1
+		</caption>
+		<thead>
+			<tr>
+				<th>ID</th><th>Nombre</th><th>Apellido</th><th>Movil</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1</th>
+				<td>Javier</td><td>Hernandez</td><td>628683919</td>
+			</tr>
+
+			<tr>
+				<th>2</th>
+				<td>Jose</td><td>Martinez</td><td>666777888</td>
+			</tr>
+
+			<tr>
+				<th>3</th>
+				<td>Ana</td><td>Alvarez</td><td>666555444</td>
+			</tr>
+		</tbody>
+	</table>
+  
+  <br><br>
+   
+   <input type="button" style="margin-left: 40%" value="Asociar Clase">
+   <br><br>
+   <input type="button" style="margin-left: 40%" value="Desasociar Clase">
+    
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("input[type=button]:first-of-type").click(function(){
+
+			     $("th").addClass("cabeza");
+			     $("tbody").addClass("cuerpo");
+
+		      });
+            
+		$("input[type=button]:nth-of-type(2)").click(function(){
+
+			     $("th").removeClass("cabeza");
+			     $("tbody").removeClass("cuerpo");
+
+
+		      });
+            
+        });
+    
+    </script>
+
+    
+</body>
+</html>

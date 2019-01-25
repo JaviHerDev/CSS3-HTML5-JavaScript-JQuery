@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Mantén los botones pulsados para cambiar su color, suéltalos para volver a su color original.</h1>
+   
+  <input type="button" id="b1" value="Botón 1" style="margin-left: 45%; background-color: lightgreen;">
+  <input type="button" id="b2" value="Botón 2" style="background-color: skyblue">
+  
+   
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("#b1").mousedown(function(){
+                $(this).css("background-color", "orange"); 
+            });
+            $("#b1").mouseup(function(){
+                $("#b1").css("background-color", "lightgreen");
+            });
+        
+            $("#b2").mousedown(function(){
+                $("#b2").css("background-color", "orange");  
+            });
+            $("#b2").mouseup(function(){
+                $("#b2").css("background-color", "skyblue");  
+            });
+            
+        });
+        
+    </script>
+
+    
+</body>
+</html>

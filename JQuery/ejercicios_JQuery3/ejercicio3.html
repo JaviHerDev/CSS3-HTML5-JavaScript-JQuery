@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Pasa el ratón por encima de una celda para cambiar el color de su fondo, retira el puntero para volver a su estado original.</h1>
+   
+  <table border="1" style= "margin-left: 45%;">
+			<tr>
+				<td id="1">Pasa el ratón </td>
+				<td id="2">Pasa el ratón</td>
+			</tr>
+			<tr>
+				<td id="3">Pasa el ratón</td>
+				<td id="4">Pasa el ratón</td>
+			</tr>
+			</table>
+   
+    <script>
+        
+        $(document).ready(function(){
+    
+        $("#1").hover(function() {
+            $(this).css("background-color", "red");
+        }, function() {
+            $( this ).css("background-color", "white");
+        });
+        
+        $("#2").hover(function() {
+            $(this).css("background-color", "blue");
+        }, function() {
+            $( this ).css("background-color", "white");
+        });
+        
+        $("#3").hover(function() {
+            $(this).css("background-color", "orange");
+        }, function() {
+            $( this ).css("background-color", "white");
+        });
+        
+        $("#4").hover(function() {
+            $(this).css("background-color", "green");
+        }, function() {
+            $( this ).css("background-color", "white");
+        });
+            
+    });
+    
+    </script>
+
+    
+</body>
+</html>

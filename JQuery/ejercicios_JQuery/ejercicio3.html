@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <title>Ejercicio Jquery</title>
+</head>
+<body>
+ 
+  <script type="text/javascript" >
+      
+    $(document).ready(inicial);
+
+      function inicial(){
+            var x=$("#primero");
+            var y=$("#segundo");
+            var z=$("#tercero");
+            var w=$("#cuarto");
+            x.click(ocultar1);
+            y.click(ocultar2);
+            z.click(ocultar3);
+            w.click(ocultar4);
+      }
+
+      function ocultar1(){
+            $("#primero").hide();
+      }
+      
+      function ocultar2(){
+            $("#segundo").hide();
+      }
+      
+      function ocultar3(){
+            $("#tercero").hide();
+      }
+      
+      function ocultar4(){
+            $("#cuarto").hide();
+      }
+    
+    </script>
+    
+    <h1 style="text-align: center;">Presiona un elemento de la lista para ocultarlo</h1>
+   
+   <ul style="margin-left: 45%;" class="lista">
+       <li id="primero">primer elemento</li>
+       <li id="segundo" >segundo elemento</li>
+       <li id="tercero">tercer elemento</li>
+       <li id="cuarto">cuarto elemento</li>
+   </ul>
+    
+</body>
+</html>

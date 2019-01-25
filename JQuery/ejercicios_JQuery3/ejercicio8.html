@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+    
+    <style>
+        
+        .estilo{
+            color: blue;
+            margin-left: 42%;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Pon un nombre en la caja de texto y pulsa en cualquier parte en blanco de la pantalla para introducirlo en la lista, si dejas la caja vacía te saldrá un cuadro de alerta. Puedes introducir todos los que quieras.</h1>
+   
+   <label for="" class="estilo">Nombre:</label><br><br>
+  <input type="text" id="nombre" class="estilo"><br><br>
+  <label for="" class="estilo">Lista de nombres introducidos:</label><br><br>
+  <textarea name="zona" id="lista" cols="30" rows="10" class="estilo"></textarea>
+   
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("#nombre").blur(function() {
+                if($("#nombre").val().length <=0){
+                    alert("Error, debes introducir un nombre de más de un carácter");
+                }else{
+                    $("#lista").append($("#nombre").val() + " ,");
+                    $("#nombre").val("");
+                }
+            });
+            
+        });
+        
+    </script>
+
+    
+</body>
+</html>

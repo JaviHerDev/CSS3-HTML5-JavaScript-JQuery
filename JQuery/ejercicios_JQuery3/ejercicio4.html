@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Pasa el ratón por algún punto dentro del cuadro amarillo para obtener las coordenadas del puntero.</h1>
+   
+  <div id="cuadro" style="height:200px; width: 200px; margin-left: 40%; background-color: yellow" >
+  </div>
+  
+  <div>
+      <p id="resultado" style=" margin-left: 40%; background-color: white;">No estás situado dentro del cuadro. </p>
+  </div>
+  
+   
+    <script>
+    
+        $(document).ready(function(){
+        
+            $("#cuadro").mousemove(function( event ) {
+              var coordenadas = "( " + event.clientX + ", " + event.clientY + " )";
+              $("#resultado").text("Coordenadas (ejeX, ejeY): " + coordenadas);
+            });
+            
+            $("#cuadro").mouseout(function(){
+                $("#resultado").text("No estás situado dentro del cuadro.");
+            });
+        });
+        
+    </script>
+
+    
+</body>
+</html>

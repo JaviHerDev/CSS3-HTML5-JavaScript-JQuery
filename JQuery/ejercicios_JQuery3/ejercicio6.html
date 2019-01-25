@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+    
+    <style>
+    
+        .grande{
+            height: 70px;
+            width: 800px;
+            margin-left: 20%;
+            background-color: yellow;
+        }
+        
+        .peque{
+            height: 250px;
+            width: 250px;
+            margin-left: 40%;
+            background-color: yellow;
+        }
+    
+    
+    </style>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Haz doble click sobre el recuadro para cambiarle las dimensiones, después, vuelve a hacer doble click para que vuelva a su tamaño original.</h1>
+   
+  <div id="cuadro" class="grande"></div>
+  
+   
+    <script>
+    
+        $(document).ready(function(){
+        
+            $("#cuadro").dblclick(function() {
+                $("#cuadro").toggleClass("peque");
+            });
+            
+        });
+        
+    </script>
+
+    
+</body>
+</html>

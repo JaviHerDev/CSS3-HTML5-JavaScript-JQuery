@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+
+<script>
+    
+    $(document).ready(function(){
+        
+            $("#cabecera").click(function(){
+                alert($("head").html());
+            });
+        
+            $("#cuerpo").click(function(){
+                alert($("body").html());
+            });
+    });
+    
+</script>
+ 
+  
+  <h1 style="text-align: center">Presiona los botones para descubrir el contenido de la cabecera o el cuerpo de la página.</h1>
+   
+   <input type="button" id="cabecera" style="margin-left: 45%" value="Cabecera">
+   <input type="button" id="cuerpo" value="Cuerpo">
+    
+</body>
+</html>

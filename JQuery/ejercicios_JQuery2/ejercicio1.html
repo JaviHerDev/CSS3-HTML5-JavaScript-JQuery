@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Presiona el botón para cambiar el texto de la primera tabla por guiones.</h1>
+   
+   <table border="1" style= "margin-left: 45%;" >
+			<tr id="1">
+				<td>Tabla 1 </td>
+				<td>Tabla 1 </td>
+				<td>Tabla 1 </td>
+			</tr>
+			<tr id="1">
+				<td>Tabla 1</td>
+				<td>Tabla 1 </td>
+				<td>Tabla 1 </td>
+			</tr>
+			<tr id="1">
+				<td>Tabla 1 </td>
+				<td>Tabla 1 </td>
+				<td>Tabla 1 </td>
+			</tr>
+
+		</table>
+		
+		<br><br>
+   
+   
+   <table border="1" style= "margin-left: 45%;">
+			<tr>
+				<td>Tabla 2 </td>
+				<td>Tabla 2 </td>
+				<td>Tabla 2 </td>
+			</tr>
+			<tr>
+				<td>Tabla 2 </td>
+				<td>Tabla 2 </td>
+				<td>Tabla 2 </td>
+			</tr>
+			<tr>
+				<td>Tabla 2 </td>
+				<td>Tabla 2 </td>
+				<td>Tabla 2 </td>
+			</tr>
+			
+		</table>
+   <br><br>
+    
+    <input type="button" value="CAMBIAR" style= "margin-left: 48%;">
+    
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("input[type=button]").click(function(){
+                $("table:first-of-type td").text("-");
+            });
+        });
+    
+    </script>
+
+    
+</body>
+</html>

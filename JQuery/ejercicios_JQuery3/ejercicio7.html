@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+    
+    <style>
+        
+        .estilo{
+            color: blue;
+            margin-left: 42%;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Pulsa en las cajas y mira como cambia el color de su texto al tomar el foco.</h1>
+   
+  <input type="text" id="text1" class="estilo" value="Contenido de la caja 1"><br><br>
+  <input type="text" id="text2" class="estilo" value="Contenido de la caja 2">
+  
+   
+    <script>
+    
+        $(document).ready(function(){
+        
+            $("#text1").focusin(function() {
+                $("#text1").css("color", "red");
+            });
+            $("#text1").focusout(function() {
+                $("#text1").css("color", "blue");
+            });
+            
+            $("#text2").focusin(function() {
+                $("#text2").css("color", "red");
+            });
+            $("#text2").focusout(function() {
+                $("#text2").css("color", "blue");
+            });
+            
+        });
+        
+    </script>
+
+    
+</body>
+</html>

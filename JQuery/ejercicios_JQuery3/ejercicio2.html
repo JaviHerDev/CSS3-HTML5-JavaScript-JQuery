@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <title>Ejercicio JQuery - Javier</title>
+</head>
+<body>
+  
+  <h1 style= " text-align: center">Pasa el ratón por encima de una celda para cambiar el color de su fondo.</h1>
+   
+  <table border="1" style= "margin-left: 45%;">
+			<tr>
+				<td id="1">Pasa el ratón </td>
+				<td id="2">Pasa el ratón</td>
+			</tr>
+			<tr>
+				<td id="3">Pasa el ratón</td>
+				<td id="4">Pasa el ratón</td>
+			</tr>
+			</table>
+   
+    <script>
+    
+        $(document).ready(function(){
+            
+            $("#1").mouseover(function(){
+                $(this).css("background-color", "red");
+            });
+            $("#1").mouseout(function(){
+                $(this).css("background-color", "red");
+            });
+            $("#2").mouseover(function(){
+                $(this).css("background-color", "blue");
+            });
+            $("#2").mouseout(function(){
+                $(this).css("background-color", "blue");
+            });
+            $("#3").mouseover(function(){
+                $(this).css("background-color", "orange");
+            });
+            $("#3").mouseout(function(){
+                $(this).css("background-color", "orange");
+            });
+            $("#4").mouseover(function(){
+                $(this).css("background-color", "green");
+            });
+            $("#4").mouseout(function(){
+                $(this).css("background-color", "green");
+            });
+            
+        });
+    
+    </script>
+
+    
+</body>
+</html>

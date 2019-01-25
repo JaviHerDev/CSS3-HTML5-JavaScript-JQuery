@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <title>Ejercicio Jquery</title>
+</head>
+<body>
+ 
+  <script type="text/javascript" >
+      
+    $(document).ready(inicial);
+
+      function inicial(){
+          $("#tabla2f1").click(color1);
+          $("#tabla2f2").click(color2);
+          $("#tabla2f3").click(color3);
+      }
+
+      function color1(){
+            var x=$("#tabla1f1");
+            x.css("background-color","orange");
+      }
+      
+      function color2(){
+            var x=$("#tabla1f2");
+            x.css("background-color","orange");
+      }
+      
+      function color3(){
+            var x=$("#tabla1f3");
+            x.css("background-color","orange");
+      }
+    
+    </script>
+    
+     <h1 style="text-align: center"> Presiona una fila de la tabla 2 para cambiar el color de fondo de la misma fila de la tabla 1</h1>
+   
+   <table style="border: 1px solid black; margin-left: 50%;">
+    <tr>
+        <th style="border: 1px solid black;">TABLA 1</th>
+    </tr>
+    <tr>
+        <td id="tabla1f1" style="border: 1px solid black;background-color: green">primera fila</td>
+    </tr>
+    <tr>
+        <td id="tabla1f2" style="border: 1px solid black;background-color: green">segunda fila</td>
+    </tr>
+    <tr>
+        <td id="tabla1f3" style="border: 1px solid black;background-color: green">tercera fila</td>
+    </tr>
+   </table>
+   
+   
+   <table style="border: 1px solid black; margin-left: 50%;">
+    <tr>
+        <th style="border: 1px solid black;">TABLA 2</th>
+    </tr>
+    <tr>
+        <td id="tabla2f1" style="border: 1px solid black;background-color: green">primera fila</td>
+    </tr>
+    <tr>
+        <td id="tabla2f2" style="border: 1px solid black;background-color: green">segunda fila</td>
+    </tr>
+    <tr>
+        <td id="tabla2f3" style="border: 1px solid black;background-color: green">tercera fila</td>
+    </tr>
+   </table>
+   
+   
+    
+</body>
+</html>
